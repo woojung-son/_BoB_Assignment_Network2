@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <winsock2.h>
+
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
@@ -40,7 +40,7 @@ int main(int argc, char* argv[]){
 	nn = my_htonl(n);
 	mm = my_htonl(m);
 
-    printf("%d(0x%x) + %d(0x%x) = %d(0x%x)", mm, mm, nn, nn, nn+mm, nn+mm);
+    printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n", nn, nn, mm, mm, nn+mm, nn+mm);
 
 	fclose(fd);
 	return 0;

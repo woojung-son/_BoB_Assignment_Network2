@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <winsock2.h>
+//#include <winsock2.h>
 #include <stdint.h>
+#include "a.h"
 
 int my_htonl(int n){
     uint16_t n1 = (n & 0xFF000000) >> 24;

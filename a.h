@@ -1,1 +1,3 @@
-void my_htonl(int n);
+#pragma once
+
+int my_htonl(int n);

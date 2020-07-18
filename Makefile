@@ -1,11 +1,11 @@
-main.out : a.o main.o
-	gcc -o main.out a.o main.o
+add-nbo.out : a.o add-nbo.o
+	g++ -o add-nbo.out a.o add-nbo.o
 
-a.o : a.c
-	gcc -c -o a.o a.c
+a.o : a.h a.cpp 
+	g++ -c -o a.o a.cpp
 
 main.o : main.c
-	gcc -c -o main.o main.c
+	g++ -c -o main.o main.cpp
 
 clean:
-	rm *.o main.out
+	rm *.o add-nbo.out
